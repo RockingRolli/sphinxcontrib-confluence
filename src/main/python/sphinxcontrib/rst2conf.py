@@ -464,7 +464,7 @@ class ConfluenceTranslator(nodes.NodeVisitor):
         if 'align' in node:
             atts['align'] = node['align']
         attributes = []
-        for att in atts.iterkeys():
+        for att in atts.keys():
             if atts[att] == True:
                 attributes.append(att)
             else:
